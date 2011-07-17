@@ -1,0 +1,22 @@
+---
+nl-NL:
+  email_to_friend:
+    send_to_friend: "Email een vriend"
+    tell_about: "Vertel een vriend over %{product}"
+    sender_name: "Uw naam"
+    sender_email: "Uw e-mailadres"
+    recipient_name: "Naam van uw vriend"
+    recipient_email: "E-mail adres van uw vriend"
+    recipient_emails: "Email adressen (gescheiden met komma's)"
+    message: "Bericht"
+    send_message: "E-mail uw vriend!"
+    mail_sent_to: "E-mail verzonden naar %{email} "
+    send_to_other: "Verzonden naar uw vriend"
+    you_would_like_this: "Ik denk dat dit een leuk product voor jou is."
+
+  captcha:
+    captcha_settings: "Captcha Settings"
+    public_key: "Public key"
+    private_key: "Private key"
+    manage_keys: "Manage your (re)captcha keys"
+    theme: "Theme"
