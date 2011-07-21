@@ -1,6 +1,7 @@
 class ToFriendMailer < ActionMailer::Base
   default_url_options[:host] = Spree::Config[:site_url]
-  default :from => Spree::Config[:mails_from]
+  default :from => Spree::Config[:mails_from],
+  		  :return_path => 'system@evansnwatson.com'
 
   def mail_to_friend(object, mail)
     @object = object
