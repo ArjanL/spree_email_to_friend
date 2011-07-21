@@ -1,4 +1,5 @@
 class ToFriendMailer < ActionMailer::Base
+  default_url_options[:host] = Spree::Config[:site_url]
   default :from => Spree::Config[:mails_from]
 
   def mail_to_friend(object, mail)
@@ -12,7 +13,6 @@ class ToFriendMailer < ActionMailer::Base
     else
       opts[:to] = mail.recipient_email
     end
-    default_url_options[:host] = mail.host
     opts[:subject] =  mail.subject
     opts[:reply_to] = mail.sender_email
 
